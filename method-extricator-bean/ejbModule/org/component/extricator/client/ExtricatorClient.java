@@ -8,11 +8,13 @@ import org.component.extricator.session.MethodExtricator;
 
 public class ExtricatorClient {
 	private static final String LOOKUP_STRING = "MethodExtricatorBean/remote";
+	private static String path = "C:/Test/antlr-2.7.7.jar";
 
 	public static void main(String[] args) {
 		MethodExtricator bean = ExtricatorClient.doLookup();
 		// 3. Call business logic
 		System.out.println(bean.isRunning());
+		System.out.println(bean.getpublicMethods(path).size());
 	}
 
 	private static MethodExtricator doLookup() {
