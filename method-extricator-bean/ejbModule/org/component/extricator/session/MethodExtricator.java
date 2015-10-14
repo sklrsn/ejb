@@ -14,6 +14,6 @@ public interface MethodExtricator {
 
 	public boolean isRunning();
 
-	public Map<String, List<String>> getpublicMethods(String path);
+	public Map<String, List<String>> getPublicMethods(String path);
 
 }

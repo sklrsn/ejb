@@ -18,16 +18,14 @@ public class ExtricatorClient {
 		MethodExtricator bean = ExtricatorClient.doLookup();
 		// 3. Call business logic
 		System.out.println(bean.isRunning());
-		System.out.println(bean.getpublicMethods(path).size());
-		System.out.println(bean.getpublicMethods(path));
+		System.out.println(bean.getPublicMethods(path));
 	}
 
 	private static MethodExtricator doLookup() {
-		Context context = null;
 		MethodExtricator bean = null;
 		try {
 			// 1. Obtaining Context
-			context = ExtricatorContext.getInitialContext();
+			Context context = ExtricatorContext.getInitialContext();
 			// 2. Lookup and cast
 			bean = (MethodExtricator) context.lookup(LOOKUP_STRING);
 		} catch (NamingException e) {

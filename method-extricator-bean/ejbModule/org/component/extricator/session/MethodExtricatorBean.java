@@ -29,14 +29,16 @@ public class MethodExtricatorBean implements MethodExtricator {
 	}
 
 	@Override
-	public Map<String, List<String>> getpublicMethods(String path) {
+	public Map<String, List<String>> getPublicMethods(String path) {
 		try {
 			return ResponseConvertor.convert(ComponentUtils.getMethodsMap(path));
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			// TODO: Swallowing the Exception
 			// TODO: create a customized exception Here
 		}
+		
 		return ComponentUtils.getMapInstance();
 	}
 
