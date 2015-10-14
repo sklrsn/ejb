@@ -1,11 +1,11 @@
 package org.component.extricator.session;
 
-import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
 import javax.ejb.Stateless;
 
+import org.component.extricator.convertor.ResponseConvertor;
 import org.component.extricator.utils.ComponentUtils;
 
 /**
@@ -26,9 +26,9 @@ public class MethodExtricatorBean implements MethodExtricator {
 	}
 
 	@Override
-	public Map<String, List<Method>> getpublicMethods(String path) {
+	public Map<String, List<String>> getpublicMethods(String path) {
 		try {
-			return ComponentUtils.getMethodsMap(path);
+			return ResponseConvertor.convert(ComponentUtils.getMethodsMap(path));
 		} catch (Exception e) {
 			e.printStackTrace();
 			// TODO: Swallowing the Exception

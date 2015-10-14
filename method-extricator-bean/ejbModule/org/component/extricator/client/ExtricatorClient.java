@@ -15,6 +15,7 @@ public class ExtricatorClient {
 		// 3. Call business logic
 		System.out.println(bean.isRunning());
 		System.out.println(bean.getpublicMethods(path).size());
+		System.out.println(bean.getpublicMethods(path));
 	}
 
 	private static MethodExtricator doLookup() {

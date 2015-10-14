@@ -1,6 +1,5 @@
 package org.component.extricator.session;
 
-import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
@@ -11,6 +10,6 @@ public interface MethodExtricator {
 
 	public boolean isRunning();
 
-	public Map<String, List<Method>> getpublicMethods(String path);
+	public Map<String, List<String>> getpublicMethods(String path);
 
 }
