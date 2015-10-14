@@ -6,6 +6,10 @@ import javax.naming.NamingException;
 import org.component.extricator.context.ExtricatorContext;
 import org.component.extricator.session.MethodExtricator;
 
+/**
+ * @author Kalaiarasan
+ * @version 1.0
+ */
 public class ExtricatorClient {
 	private static final String LOOKUP_STRING = "MethodExtricatorBean/remote";
 	private static String path = "C:/Test/antlr-2.7.7.jar";

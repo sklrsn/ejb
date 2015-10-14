@@ -9,6 +9,10 @@ import java.util.Map.Entry;
 
 import org.component.extricator.utils.ComponentUtils;
 
+/**
+ * @author Kalaiarasan
+ * @version 1.0
+ */
 public class ResponseConvertor {
 
 	public static Map<String, List<String>> convert(Map<String, List<Method>> map) {
