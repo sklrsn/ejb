@@ -4,6 +4,6 @@ import javax.ejb.Remote;
 
 @Remote
 public interface MethodExtricator {
-	public String sayHello();
+	public boolean isRunning();
 
 }

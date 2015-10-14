@@ -15,8 +15,8 @@ public class MethodExtricatorBean implements MethodExtricator {
 	}
 
 	@Override
-	public String sayHello() {
-		return "Hello Kalai";
+	public boolean isRunning() {
+		return true;
 	}
 
 }
