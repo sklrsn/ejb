@@ -19,9 +19,6 @@ import java.util.zip.ZipInputStream;
 /**
  * This class added for Component Utilities
  * 
- * @author Kalaiarasan
- * @version 1.0
- *
  */
 
 public class ComponentUtils {

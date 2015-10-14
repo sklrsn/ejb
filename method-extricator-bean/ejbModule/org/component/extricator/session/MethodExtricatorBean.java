@@ -11,8 +11,6 @@ import org.component.extricator.utils.ComponentUtils;
 /**
  * Session Bean implementation class MethodExtricatorBean
  * 
- * @author Kalaiarasan
- * @version 1.0
  */
 @Stateless
 public class MethodExtricatorBean implements MethodExtricator {
