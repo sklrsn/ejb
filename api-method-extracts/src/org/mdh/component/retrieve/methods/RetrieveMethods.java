@@ -11,7 +11,7 @@ import org.mdh.component.retrieve.utils.ComponentUtils;
 
 public class RetrieveMethods {
 	public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		String path = "C:/Users/ksaminathan/Downloads/test/javax.servlet-api-3.0.1.jar";
+		String path = "C:/Test/antlr-2.7.7.jar";
 		try {
 			Map<String, List<Method>> map = ComponentUtils.getMethodsMap(path);
 			System.out.println(map.keySet().size());

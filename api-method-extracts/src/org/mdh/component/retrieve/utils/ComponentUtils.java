@@ -17,7 +17,10 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 /**
- * @author ksaminathan
+ * This class added for Component Utilities
+ * 
+ * @author Kalaiarasan
+ * @version 1.0
  *
  */
 
@@ -26,6 +29,17 @@ public class ComponentUtils {
 	@SuppressWarnings("unchecked")
 	private static final Class<URL>[] parameters = new Class[] { URL.class };
 
+	/**
+	 * @param path
+	 * @return Map<String, List<Method>>
+	 * @throws SecurityException
+	 * @throws ClassNotFoundException
+	 * @throws IOException
+	 * @throws NoSuchMethodException
+	 * @throws IllegalAccessException
+	 * @throws IllegalArgumentException
+	 * @throws InvocationTargetException
+	 */
 	public static Map<String, List<Method>> getMethodsMap(String path) throws SecurityException, ClassNotFoundException, IOException,
 			NoSuchMethodException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		if (!extractClassNames(path).isEmpty()) {
